@@ -1,4 +1,4 @@
-import { ActionPanel, Action, Alert, Detail, Icon, confirmAlert, useNavigation } from "@raycast/api";
+import { ActionPanel, Action, Alert, Color, Detail, Icon, confirmAlert, useNavigation } from "@raycast/api";
 import { useEffect, useMemo, useState } from "react";
 import type { ImgBedFileItem } from "../types/files";
 import { buildHtmlLink, buildMarkdownLink, formatFileSize, formatTime } from "../utils/format";

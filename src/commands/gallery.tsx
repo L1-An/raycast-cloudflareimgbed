@@ -54,7 +54,7 @@ export default function GalleryCommand() {
           title={file.name.split("/").pop() ?? file.name}
           subtitle={buildSubtitle(file)}
           content={{ source: file.url }}
-          quickLookURL={file.url}
+          quickLook={{ url: file.url }}
           actions={
             <ActionPanel>
               <ActionPanel.Section>

@@ -141,5 +141,5 @@ async function fileFromPath(path: string, overrideName?: string) {
   const buffer = await readFile(path);
   const fileName = overrideName ?? path.split("/").pop() ?? "file";
   const type = getMimeType(fileName);
-  return new File([buffer], fileName, { type });
+  return new File([new Uint8Array(buffer)], fileName, { type });
 }
